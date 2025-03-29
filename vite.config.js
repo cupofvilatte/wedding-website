@@ -5,6 +5,7 @@ export default defineConfig({
   server: {
     port: 5173            // Dev server port
   },
+  base: '/wedding-website/',
   build: {
     outDir: '../dist',     // Output directory for the production build
     rollupOptions: {
