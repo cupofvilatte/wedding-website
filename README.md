@@ -1,1 +1,1 @@
-![Deployment](https://github.com/<YOUR-USERNAME>/<YOUR-REPO-NAME>/actions/workflows/deploy.yml/badge.svg)
+![Deployment](https://github.com/cupofvilatte/wedding-website/actions/workflows/deploy.yml/badge.svg)
