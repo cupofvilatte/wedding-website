@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   root: './src',          // Use src as the root folder
@@ -17,5 +18,19 @@ export default defineConfig({
         album: './src/pages/album/index.html'         // Album page
       }
     }
-  }
+  },
+  plugins: [
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'components/header.html',
+          dest: ''
+        },
+        {
+          src: 'components/footer.html',
+          dest: ''
+        }
+      ]
+    })
+  ]
 });
