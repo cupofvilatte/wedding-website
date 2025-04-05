@@ -10,6 +10,7 @@ export default defineConfig({
     outDir: '../dist',     // ✅ Output in the root dist folder
     rollupOptions: {
       input: {
+        index: './src/index.html',
         home: './src/pages/home/index.html',          // Home page
         faq: './src/pages/faq/index.html',            // FAQ page
         guestbook: './src/pages/guestbook/index.html', // Guestbook page
