@@ -22,6 +22,3 @@ export const injectLayout = async () => {
     }
   };
   
-  // Run the injection function on page load
-  window.addEventListener('DOMContentLoaded', injectLayout);
-  
