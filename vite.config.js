@@ -1,3 +1,4 @@
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
@@ -11,11 +12,11 @@ export default defineConfig({
     outDir: '../dist',     // ✅ Output in the root dist folder
     rollupOptions: {
       input: {
-        index: './src/index.html',
-        home: './src/pages/home/index.html',          // Home page
-        faq: './src/pages/faq/index.html',            // FAQ page
-        guestbook: './src/pages/guestbook/index.html', // Guestbook page
-        album: './src/pages/album/index.html'         // Album page
+        index: resolve(__dirname, 'src/index.html'),
+        home: resolve(__dirname, 'src/pages/home/index.html'),
+        faq: resolve(__dirname, 'src/pages/faq/index.html'),
+        guestbook: resolve(__dirname, 'src/pages/guestbook/index.html'),
+        album: resolve(__dirname, 'src/pages/album/index.html')
       }
     }
   },
