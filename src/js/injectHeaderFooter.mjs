@@ -7,7 +7,7 @@ export const injectLayout = async () => {
 
   try {
     // Fetch and inject header
-    const headerResponse = await fetch('/wedding-website/src/components/header.html');
+    const headerResponse = await fetch('../../components/header.html');
     if (headerResponse.ok) {
       headerContainer.innerHTML = await headerResponse.text();
       document.body.insertAdjacentElement('afterbegin', headerContainer);
@@ -16,7 +16,7 @@ export const injectLayout = async () => {
     }
 
     // Fetch and inject footer
-    const footerResponse = await fetch('/wedding-website/src/components/footer.html');
+    const footerResponse = await fetch('../../components/footer.html');
     if (footerResponse.ok) {
       footerContainer.innerHTML = await footerResponse.text();
       document.body.insertAdjacentElement('beforeend', footerContainer);
