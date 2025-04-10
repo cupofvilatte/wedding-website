@@ -5,9 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Wedding Website</title>
   <link rel="stylesheet" href="../../styles/main.css">
+  <!-- In your HTML file -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeBlEcg0_EdAX1vIXUHzSbWrQT_NE6RB8&callback=initMap" async defer></script>
+
   <script type="module" src="../../js/home.js"></script>
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/wedding-website/pages/home/index.html">Home</a></li>
+        <li><a href="/wedding-website/pages/faq/index.html">FAQ</a></li>
+        <li><a href="/wedding-website/pages/guestbook/index.html">Guestbook</a></li>
+        <li><a href="/wedding-website/pages/album/index.html">Album</a></li>
+      </ul>
+    </nav>
+  </header>  
   <main>
     <section id="welcome">
       <h1>Welcome to Our Wedding</h1>
@@ -19,6 +32,16 @@
       <a href="https://www.amazon.com/wedding/share/vilateandchandler" target="_blank">View Registry</a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSclSXw-2XbmfYI_-ZmTZfOS-seJIrBb1HR3oYcsmwyx5gcqEg/viewform?usp=header" target="_blank">RSVP Here</a>
     </section>
+
+    <section id="location">
+      <h2>Reception Location</h2>
+      <div id="map" style="height: 400px; width: 100%;"></div>
+    </section>
+    
   </main>
+  <footer>
+    <p>© 2025 Vilate & Chandler | All Rights Reserved</p>
+    <p>Contact us at: <a href="mailto:vilateandchandler@gmail.com">vilateandchandler@gmail.com</a></p>
+  </footer>
 </body>
 </html>
